@@ -1,0 +1,74 @@
+.contacts {
+    height: 41px;
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__desc{
+    color: #9A9A9A;
+    font-size: 11px;
+}
+
+.contacts__phone{
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.contacts__schedule {
+    position: relative;
+}
+
+.contacts__link{
+    font-size: 13px;
+    text-decoration: underline;
+    color: #FFFFFF;
+    margin-top: -8px;
+}
+
+.contacts__list {
+    font-size: 12px;
+    color: #1E1F20;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+
+.contacts__drop {
+    background-color: #EDEDED;
+    opacity: 0;
+    border-radius: 4px;
+    padding: 16px 20px;
+    width: 160px;
+    margin-top: 9px;
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+
+.contacts__schedule:hover .contacts__drop {
+    opacity: 0.8;
+    pointer-events: visible;
+}
+
+.contacts__drop::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #EDEDED;
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+}
+
+.contacts__drop::after {
+    content: "";
+    display: block;
+    height: 9px;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+}

@@ -1,0 +1,35 @@
+.menu{
+    padding-bottom: 9px;
+}
+
+.menu__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 62px;
+}
+
+.menu__item--active .menu__link{
+    color: #8F00FF;
+}
+
+.menu__link{
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    color: #8F00FF;
+}
+
+.menu__footer{
+    position: absolute;
+    left: 287px;
+    bottom: 67px;
+}
+
+.menu__footer--down {
+    position: absolute;
+    left: 287px;
+    bottom: 16px;
+}
+
+
